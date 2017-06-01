@@ -301,7 +301,7 @@
             button21.Name = "button21";
             button21.Size = new System.Drawing.Size(45, 45);
             button21.TabIndex = 21;
-            button21.Text = "V";
+            button21.Text = "√";
             button21.UseVisualStyleBackColor = true;
             button21.Click += new System.EventHandler(this.operatorr_click);
             // 
