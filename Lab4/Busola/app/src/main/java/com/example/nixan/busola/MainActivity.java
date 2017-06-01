@@ -20,4 +20,16 @@ public class MainActivity extends AppCompatActivity {
         imageView = (ImageView) findViewById(R.id.busola);
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
     }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
+    
 }
