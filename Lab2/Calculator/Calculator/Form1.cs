@@ -115,7 +115,12 @@ namespace Calculator
 
         private void operatorr_click(object sender, EventArgs e)
         {
-           
+            val = float.Parse(textBox.Text);
+            Double z = val;
+            z = Math.Sqrt(z);
+            textBox.Text = (z).ToString();
+            oper_pres = true;
+            equ.Text = "sqrt(" + val + ")";
         }
     }
 }
