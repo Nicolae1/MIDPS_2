@@ -38,6 +38,10 @@ namespace Calculator
        
         private void button_Click(object sender, EventArgs e)
         {
+            if ((textBox.Text == "0") || (oper_pres)) textBox.Clear();
+            oper_pres = false;
+            Button b = (Button)sender;
+            textBox.Text = textBox.Text + b.Text;
         }
 
         private void button20_Click(object sender, EventArgs e)
