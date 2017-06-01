@@ -107,7 +107,10 @@ namespace Calculator
 
         private void buttonp_Click(object sender, EventArgs e)
         {
-            
+            if (oper_pres) textBox.Clear();
+            oper_pres = false;
+
+            textBox.Text = textBox.Text + ",";
         }
 
         private void operatorr_click(object sender, EventArgs e)
