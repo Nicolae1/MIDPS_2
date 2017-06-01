@@ -27,8 +27,12 @@ namespace Calculator
 
         private void button17_Click(object sender, EventArgs e)
         {
-          
 
+            val = float.Parse(textBox.Text);
+
+            val = val - 2 * val;
+
+            textBox.Text = (val).ToString();
         }
 
        
