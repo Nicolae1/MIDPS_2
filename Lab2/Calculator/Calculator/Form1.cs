@@ -100,7 +100,9 @@ namespace Calculator
 
         private void button16_Click(object sender, EventArgs e)
         {
-          
+            textBox.Text = "0";
+            val = 0;
+            equ.Text = "";
         }
 
         private void buttonp_Click(object sender, EventArgs e)
