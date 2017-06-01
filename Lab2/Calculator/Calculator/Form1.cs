@@ -51,7 +51,11 @@ namespace Calculator
 
         private void operator_click(object sender, EventArgs e)
         {
-          
+            Button b = (Button)sender;
+            oper = b.Text;
+            val = float.Parse(textBox.Text);
+            oper_pres = true;
+            equ.Text = val + " " + oper;
 
         }
 
