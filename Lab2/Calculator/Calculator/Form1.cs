@@ -61,7 +61,41 @@ namespace Calculator
 
         private void button18_Click(object sender, EventArgs e)
         {
-           
+            oper_pres = true;
+            equ.Text = "";
+            switch (oper)
+            {
+                case "+":
+                    textBox.Text = (val + float.Parse(textBox.Text)).ToString();
+                    break;
+
+                case "-":
+                    textBox.Text = (val - float.Parse(textBox.Text)).ToString();
+                    break;
+
+                case "*":
+                    textBox.Text = (val * float.Parse(textBox.Text)).ToString();
+                    break;
+
+                case "^":
+                    float x = val;
+                    for (int i = 0; i < int.Parse(textBox.Text) - 1; i++) { val = val * x; }
+                    textBox.Text = (val).ToString();
+                    break;
+
+                case "%":
+                    textBox.Text = (val / float.Parse(textBox.Text)).ToString();
+                    break;
+
+                case "/":
+                    textBox.Text = (val / float.Parse(textBox.Text)).ToString();
+                    break;
+
+                default:
+                    break;
+
+            }//switch
+
         }
 
         private void button16_Click(object sender, EventArgs e)
