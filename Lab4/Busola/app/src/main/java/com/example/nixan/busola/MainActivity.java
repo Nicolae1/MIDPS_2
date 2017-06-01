@@ -1,7 +1,14 @@
 package com.example.nixan.busola;
 
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.RotateAnimation;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
+        mSensorManager.unregisterListener(this);
     }
 
 
