@@ -46,7 +46,7 @@ namespace Calculator
 
         private void button20_Click(object sender, EventArgs e)
         {
-           
+            textBox.Text = "0";
         }
 
         private void operator_click(object sender, EventArgs e)
