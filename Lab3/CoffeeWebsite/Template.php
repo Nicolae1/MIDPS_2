@@ -13,7 +13,7 @@
             <nav id="navigation">
                 <ul id="nav">
                     <li><a href="index.php">Casa</a></li>
-                    
+                    d
                     <li><a href="Magazine.php">Magazine</a></li>
                     <li><a href="About.php">Despre</a></li>
                     
